@@ -1,7 +1,8 @@
-const yourname = "Sultan";
+const http = require("http");
 
-function greet(user) {
-    return "Hello " + user + ", you are learning backend!";
-}
-
-console.log(greet(yourname));
+const server = http.createServer((req, res) => {
+        res.end("Hello Sultan, this is your backend speaking!");
+});
+server.listen(3000, () => {
+    console.log("Server is running on http://localhost:3000");
+});
