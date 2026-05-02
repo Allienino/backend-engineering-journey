@@ -38,3 +38,53 @@ Hello Sultan, you are learning backend!
 ## Notes
 
 This is my first step into backend engineering. I learned how Node.js allows JavaScript to run outside the browser.
+
+## 📅 Day 2: First Backend Server
+
+### What I Learned
+
+* What a server is
+* How to create a server using Node.js
+* How a browser sends requests and receives responses
+
+### Code Example
+
+```javascript
+const http = require("http");
+
+const server = http.createServer((req, res) => {
+    res.end("Hello from your first backend server!");
+});
+
+server.listen(3000, () => {
+    console.log("Server is running on http://localhost:3000");
+});
+```
+
+### Output
+
+When I open http://localhost:3000 in my browser, I see my custom message.
+
+### Notes
+
+Today I learned how my computer can act like a server and respond to browser requests.
+
+## 📅 JavaScript Basics Practice
+
+### Topics Covered
+
+* Variables
+* Numbers & Operators
+* Strings
+* Data Types
+
+### What I Practiced
+
+* String manipulation
+* Basic calculations
+* Combining variables
+* Using typeof
+
+### Notes
+
+I practiced how to store data, manipulate strings, and perform operations using JavaScript.
