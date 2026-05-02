@@ -41,4 +41,7 @@ const item1 = "Book";
 const price1 = 500;
 const quantity1 = 2;
 
+const total = price1 * quantity1;
+
 console.log("You bought " + quantity1 + " " + item1 +"(s)." + " Total cost is " + price1*quantity1)
+console.log(`You bought ${quantity1} ${item1}(s). Total cost is ${total}`);
