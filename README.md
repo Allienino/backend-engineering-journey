@@ -88,3 +88,20 @@ Today I learned how my computer can act like a server and respond to browser req
 ### Notes
 
 I practiced how to store data, manipulate strings, and perform operations using JavaScript.
+## 📅 JavaScript Control Flow Practice
+
+### Topics Covered
+
+* Conditional statements (if/else)
+* Loops
+* Functions and return
+
+### What I Practiced
+
+* Decision making in code
+* Repeating tasks using loops
+* Writing reusable functions
+
+### Notes
+
+Today I learned how to control the flow of a program using conditions and loops, and how functions help organize logic.
