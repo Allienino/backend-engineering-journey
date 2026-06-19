@@ -1,3 +1,5 @@
+/**
+ 
 // ===============================
 // TASK 1: Variable + String Output
 // ===============================
@@ -212,3 +214,83 @@ function multiplyNumbers(m) {
 }
 
 multiplyNumbers(2)
+* 
+ */
+
+let singleQuotes = 'This is a string';
+console.log(singleQuotes);
+let doubleQuotes = "This is also a string";
+console.log(doubleQuotes);
+let developer = "Jessica";
+console.log(developer);
+developer = "Quincy";
+console.log(developer);
+
+let greeting = 'Hello';
+greeting += ', John!';
+
+console.log(greeting); // "Hello, John!"
+
+let str1 = 'Hello';
+let str2 = 'World';
+
+let result = str1.concat(' ', str2); 
+console.log(result); // Hello World
+
+//JavaScript Trivia Bot
+
+console.log("Hello! I'm your coding fun fact guide!")
+let botName = 'Allienino';
+let botLocation = 'The Cloud';
+let favoriteLanguage = 'JavaScript';
+
+console.log("My name is " + botName + " and I live on " + botLocation + ".");
+
+console.log("My favorite programming language is "+ favoriteLanguage + '.' )
+
+let codingFact = favoriteLanguage + ' was originally named Mocha.';
+
+console.log(codingFact)
+
+codingFact = favoriteLanguage + ' was later renamed to LiveScript.'
+
+console.log(codingFact)
+
+codingFact = favoriteLanguage + 'was later renamed to TypeScript.'
+
+console.log(codingFact)
+
+console.log ("It was fun sharing these facts with you. Goodbye! - "+ botName + " from " + botLocation + ".")
+
+
+//Build a Sentence Maker
+
+let adjective = "gigantic";
+let noun = "dragon";
+let verb = "angry";
+let place = "volcano";
+let adjective2 = "smoky";
+let noun2 = "marshmallows";
+
+let firstStory;
+
+firstStory = "Once upon a time, there was a(n) " + adjective + " " + noun + " who loved to eat " + noun2 + ". The " + noun + " lived in a " + place + " and had " + adjective2 + " nostrils that blew fire when it was " + verb + ".";
+
+console.log("First story: " + firstStory);
+
+adjective = "tiny";
+noun = "unicorn";
+verb = "excited";
+place = "enchanted forest";
+adjective2 = "sparkly";
+noun2 = "cupcakes";
+
+let secondStory;
+
+secondStory = "Once upon a time, there was a(n) " + adjective + " " + noun + " who loved to eat " + noun2 + ". The " + noun + " lived in a " + place + " and had " + adjective2 + " nostrils that blew fire when it was " + verb + ".";
+
+console.log("Second story: " + secondStory);
+
+let num = 7
+
+console.log(typeof num)
