@@ -217,6 +217,7 @@ multiplyNumbers(2)
 * 
  */
 
+/*
 let singleQuotes = 'This is a string';
 console.log(singleQuotes);
 let doubleQuotes = "This is also a string";
@@ -293,4 +294,102 @@ console.log("Second story: " + secondStory);
 
 let num = 7
 
-console.log(typeof num)
+console.log(typeof num) */
+
+let poem = "Roses are red,\nViolets are blue,\nJavaScript is fun,\nAnd so are you.";
+console.log(poem);
+
+const name = "Alice";
+const age = 25;
+const message = `My name is ${name} and I am ${age} years old.`;
+console.log(message);
+
+let poem1 = `Roses are red,
+Violets are blue,
+JavaScript is fun,
+And so are you.`;
+
+console.log(poem1);
+
+const song = "Bohemian Rhapsody";
+const score = 9.5;
+const highestScore = 10;
+const output = `One of my favorite songs is "${song}". I rated it ${
+  (score / highestScore) * 100
+}%.`;
+console.log(output); 
+
+//Fortune teller 
+
+let fortune1 = "Your cat will look very cuddly today.";
+let fortune2 = "The weather will be nice tomorrow.";
+let fortune3 = "Be cautious of your new neighbors.";
+let fortune4 = "You will find a new hobby soon.";
+let fortune5 = "It would be wise to avoid the color red today.";
+
+
+
+let randomNumber = Math.floor(Math.random() * 5) + 1;
+
+
+let selectedFortune;
+
+if (randomNumber === 1) {
+    selectedFortune = fortune1;
+} else if (randomNumber === 2) {
+    selectedFortune = fortune2;
+} else if (randomNumber === 3) {
+    selectedFortune = fortune3;
+} else if (randomNumber === 4) {
+    selectedFortune = fortune4;
+} else if (randomNumber === 5) {
+    selectedFortune = fortune5;
+}
+
+
+console.log(selectedFortune);
+
+//Calculator
+
+function calculateSum(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(calculateSum(2, 5));
+console.log(calculateSum(10, 10));
+console.log(calculateSum(5, 5));
+
+function calculateDifference(num1, num2) {
+  return num1 - num2;
+}
+
+console.log(calculateDifference(22, 5));
+console.log(calculateDifference(12, 1));
+console.log(calculateDifference(17, 9));
+
+function calculateProduct(num1, num2) {
+  return num1 * num2;
+}
+
+console.log(calculateProduct(13, 5));
+
+function calculateQuotient(num1, num2) {
+  return num2 === 0 ? "Error: Division by zero" : num1 / num2;
+}
+
+console.log(calculateQuotient(7, 11));
+console.log(calculateQuotient(3, 0));
+
+function calculateSquare(num) {
+  return num ** 2;
+}
+
+console.log(calculateSquare(2));
+console.log(calculateSquare(9));
+
+function calculateSquareRoot(num) {
+  return Math.sqrt(num);
+}
+
+console.log(calculateSquareRoot(25))
+console.log(calculateSquareRoot(100))
