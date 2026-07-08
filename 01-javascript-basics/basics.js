@@ -393,3 +393,5 @@ function calculateSquareRoot(num) {
 
 console.log(calculateSquareRoot(25))
 console.log(calculateSquareRoot(100))
+
+//Build an Email Masker
