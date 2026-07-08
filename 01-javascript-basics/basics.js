@@ -395,3 +395,35 @@ console.log(calculateSquareRoot(25))
 console.log(calculateSquareRoot(100))
 
 //Build an Email Masker
+function maskEmail(email) {
+  // 1. Locate the delimiter between the local part and the domain.
+  const atIndex = email.indexOf("@");
+
+  // 2. Isolate the local part (everything before the '@').
+  const localPart = email.slice(0, atIndex);
+
+  // 3. Isolate the domain part (the '@' and everything after it).
+  const domainPart = email.slice(atIndex);
+
+  // 4. Extract the first and last characters of the local part.
+  const firstChar = localPart[0];
+  const lastChar = localPart[localPart.length - 1];
+
+  // 5. Generate the precise number of asterisks needed to mask the middle.
+  // The number of asterisks is the total length minus the 2 visible characters.
+  const maskedMiddle = "*".repeat(localPart.length - 2);
+
+  // 6. Concatenate the parts back together.
+  return firstChar + maskedMiddle + lastChar + domainPart;
+}
+
+// Global scope execution
+const email = "apple.pie@example.com";
+console.log(maskEmail(email));
+
+//Temp conversion
+function convertCtoF(temp){
+  return temp * (9/5) + 32
+}
+
+convertCtoF(-30)
