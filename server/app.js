@@ -1,15 +1,4 @@
-// const http = require("http");
+const log = require('./logger');
 
-// const server = http.createServer((req, res) => {
-//         res.end("Hello Sultan, this is your backend speaking!");
-// });
-// server.listen(3000, () => {
-//     console.log("Server is running on http://localhost:3000");
-// });
-
-
-function getLength(name) {
-    return name.length;
-}
-
-console.log(getLength("Sultan"));
+//console.log(logger);
+log('New message');
